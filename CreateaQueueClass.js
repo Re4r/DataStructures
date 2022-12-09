@@ -40,3 +40,15 @@ console.log(newQueue.size());
 console.log(newQueue.front());
 console.log(newQueue.isEmpty());
 newQueue.print();
+
+
+function Ueu(...item) {
+    const coll = item;
+
+    this.printer = function() {
+        console.log(coll);
+    }
+}
+
+const newRt = new Ueu(1,5,6,7,99,444);
+newRt.printer();
