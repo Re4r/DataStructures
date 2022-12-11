@@ -59,5 +59,5 @@ console.log(pool.values());
 console.log(pool);
 console.log(pool.union([1, 2, 3]));
 console.log(pool);
-console.log(pool.union([1, 5, 3]));
+console.log(pool.union([1, 5, 2, 2, 3]));
 console.log(pool);
