@@ -64,3 +64,4 @@ link.add('YYY');
 console.log(link.head());
 link.removeAt(2);
 console.log(link.head());
+
