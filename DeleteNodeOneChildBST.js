@@ -50,14 +50,15 @@ function BinarySearchTree() {
             }
         }
         if (!target) return null;
-        
+        const replacement = target.right ? target.right : target.left;
         if (!parent) {
-            this.root = null;
+            this.root = replacement;
         } else {
             const direction = parent.left === target ? 'left' : 'right';
-            parent[direction] = null;
-        }
-    }
+            parent[direction] = replacement;
+        } 
+          
+    };
 }
 
 const newBin = new BinarySearchTree();
@@ -68,7 +69,5 @@ newBin.add(20);
 newBin.add(23);
 newBin.add(45);
 newBin.add(38);
-
-newBin.remove(45);
-
+newBin.remove(44);
 displayTree(newBin);
