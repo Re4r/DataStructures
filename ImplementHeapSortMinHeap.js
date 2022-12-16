@@ -61,6 +61,7 @@ console.log(createRandomArray());
 console.log(isSorted(array));
 
 heap.insert(array);
+
 heap.print();
 
 
